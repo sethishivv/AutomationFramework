@@ -1,0 +1,36 @@
+{
+  "users": [
+    {
+      "firstName": "Steven",
+      "lastName": "S",
+      "subjectId": "1",
+      "id": 1
+    },
+    {
+      "firstName": "Rex",
+      "lastName": "P",
+      "subjectId": "2",
+      "id": 2
+    },
+    {
+      "firstName": "Scott",
+      "lastName": "K",
+      "subjectId": "3",
+      "id": 3
+    }
+  ],
+  "subjects": [
+    {
+      "name": "Automation",
+      "id": 1
+    },
+    {
+      "name": "Testing",
+      "id": 2
+    },
+    {
+      "name": "Functional",
+      "id": 3
+    }
+  ]
+}
