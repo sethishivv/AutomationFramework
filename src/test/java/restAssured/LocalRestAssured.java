@@ -25,7 +25,7 @@ public class LocalRestAssured {
   @Test
   public void postTest() {
     JSONObject request = new JSONObject();
-    request.put("firstName", "Steven");
+    request.put("firstName", "Shivam");
     request.put("lastName", "QA");
     request.put("subjectId", "2");
 

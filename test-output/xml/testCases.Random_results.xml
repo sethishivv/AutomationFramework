@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="TestNGTest-bf061842-0a3d-408d-8f21-c6a7f0780403"
+           tests="1"
+           failures="1"
+           errors="0"
+           skipped="0"
+           time="53.418">
+    <properties></properties>
+
+            <testcase
+                name="brokenLinks"
+                time="53.418"
+                classname="testCases.Random">
+
+            <failure type="org.openqa.selenium.WebDriverException" message="target frame detached
+  (failed to check if window was closed: disconnected: Unable to receive message from renderer)
+  (Session info: chrome=144.0.7559.133)
+Build info: version: &apos;4.13.0&apos;, revision: &apos;ba948ece5b*&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.9&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [090a0766dc5917648d2a99796adcdf97, getElementAttribute {id=f.AA47B56945963DD1C1C1757B56206850.d.AD1FB88E0F8BA154B3C14DA13AF87040.e.154, name=href}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 144.0.7559.133, chrome: {chromedriverVersion: 144.0.7559.133 (7da823b1d59..., userDataDir: C:\Users\AW-LAP~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:56614}, goog:processID: 18128, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:56614/devtoo..., se:cdpVersion: 144.0.7559.133, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (090a0766dc5917648d2a99796adcdf97)] -&gt; tag name: a]
+Session ID: 090a0766dc5917648d2a99796adcdf97">
+                <![CDATA[org.openqa.selenium.WebDriverException: target frame detached
+  (failed to check if window was closed: disconnected: Unable to receive message from renderer)
+  (Session info: chrome=144.0.7559.133)
+Build info: version: '4.13.0', revision: 'ba948ece5b*'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.9'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [090a0766dc5917648d2a99796adcdf97, getElementAttribute {id=f.AA47B56945963DD1C1C1757B56206850.d.AD1FB88E0F8BA154B3C14DA13AF87040.e.154, name=href}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 144.0.7559.133, chrome: {chromedriverVersion: 144.0.7559.133 (7da823b1d59..., userDataDir: C:\Users\AW-LAP~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:56614}, goog:processID: 18128, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:56614/devtoo..., se:cdpVersion: 144.0.7559.133, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (090a0766dc5917648d2a99796adcdf97)] -> tag name: a]
+Session ID: 090a0766dc5917648d2a99796adcdf97
+                java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(Unknown Source)java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Unknown Source)java.base/java.lang.reflect.Constructor.newInstance(Unknown Source)org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:196)org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:171)org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:602)org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:224)org.openqa.selenium.remote.RemoteWebElement.getAttribute(RemoteWebElement.java:150)testCases.Random.brokenLinks(Random.java:25)java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(Unknown Source)java.base/java.lang.reflect.Method.invoke(Unknown Source)org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)java.base/java.util.ArrayList.forEach(Unknown Source)org.testng.TestRunner.privateRun(TestRunner.java:848)org.testng.TestRunner.run(TestRunner.java:621)org.testng.SuiteRunner.runTest(SuiteRunner.java:443)org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)org.testng.SuiteRunner.run(SuiteRunner.java:336)org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)org.testng.TestNG.runSuitesLocally(TestNG.java:1200)org.testng.TestNG.runSuites(TestNG.java:1114)org.testng.TestNG.run(TestNG.java:1082)com.microsoft.java.test.runner.testng.TestNGRunner.run(TestNGRunner.java:45)com.microsoft.java.test.runner.testng.TestNGLauncher.execute(TestNGLauncher.java:32)com.microsoft.java.test.runner.Launcher.main(Launcher.java:57)
+]]>
+            </failure>
+    </testcase>
+
+
+</testsuite>

@@ -8,7 +8,6 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
-import org.openqa.selenium.chrome.ChromeOptions;
 import org.testng.annotations.Test;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
@@ -18,7 +17,6 @@ public class Random {
 	public void brokenLinks() {
 		WebDriver driver;
 		WebDriverManager.chromedriver().setup();
-		ChromeOptions option = new ChromeOptions();
 		driver = new ChromeDriver();
 		driver.get("https://appwrk.com/");
 		List<WebElement> links = driver.findElements(By.tagName("a"));

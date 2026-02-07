@@ -4,6 +4,7 @@ import io.github.bonigarcia.wdm.WebDriverManager;
 import java.io.FileReader;
 import java.io.IOException;
 import java.net.URL;
+import java.util.HashMap;
 import java.util.Properties;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -24,8 +25,8 @@ public class BaseTest {
   public static FileReader fr1;
   public static FileReader fr2;
   // declare BrowserStack credentails
-  public static final String USERNAME = "stevens_IwtlEx";
-  public static final String AUTOMATE_KEY = "5B8s2YdZzdKgisRa9NMr";
+  public static final String USERNAME = "XXX";
+  public static final String AUTOMATE_KEY = "XXX";
   // declare remote URL in a variable
   public static final String URL =
     "https://" + USERNAME + ":" + AUTOMATE_KEY + "@hub.browserstack.com/wd/hub";
@@ -66,14 +67,18 @@ public class BaseTest {
     }
     //Added the BrowserStack Configurations to run the test on Remote Browser
     if (prop.getProperty("browser").equalsIgnoreCase("remote")) {
-      DesiredCapabilities caps = new DesiredCapabilities();
-      caps.setCapability("os", "Windows");
-      caps.setCapability("os_version", "11");
-      caps.setCapability("browser", "chrome");
-      caps.setCapability("browser_version", "111");
-      caps.setCapability("name", "Steven");
+      ChromeOptions options = new ChromeOptions();
+        options.setBrowserVersion("140.0");
 
-      driver = new RemoteWebDriver(new URL(URL), caps);
+        HashMap<String, Object> bstackOptions = new HashMap<>();
+        bstackOptions.put("os", "Windows");
+        bstackOptions.put("osVersion", "10");
+        bstackOptions.put("sessionName", "New Test Session");
+        bstackOptions.put("buildName", "BrowserStack Demo");
+
+        options.setCapability("bstack:options", bstackOptions);
+
+      driver = new RemoteWebDriver(new URL(URL), options);
       driver.manage().window().maximize();
       driver.get(prop.getProperty("url"));
     }

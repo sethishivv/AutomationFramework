@@ -49,7 +49,7 @@ public class RestAssured {
   @Test(enabled = true)
   public void postUser() {
     JSONObject request = new JSONObject();
-    request.put("name", "Steven");
+    request.put("name", "Shivam");
     request.put("job", "QA");
     baseURI = "https://reqres.in/api";
 
@@ -66,7 +66,7 @@ public class RestAssured {
   @Test(enabled = true)
   public void putUser() {
     JSONObject request = new JSONObject();
-    request.put("name", "Steven");
+    request.put("name", "Shivam");
     request.put("job", "QA");
     baseURI = "https://reqres.in/api";
 
@@ -83,7 +83,7 @@ public class RestAssured {
   @Test
   public void patchUser() {
     JSONObject request = new JSONObject();
-    request.put("name", "Steven");
+    request.put("name", "Shivam");
     request.put("job", "QA");
     baseURI = "https://reqres.in/api";
 
