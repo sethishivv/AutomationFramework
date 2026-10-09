@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="TestNGTest-85f7a33b-4976-490e-9562-b365cc3ee9d2"
+<testsuite name="TestNGTest-1595fd4a-f567-42fa-8a68-3786c447d4d0"
            tests="1"
            failures="0"
            errors="0"
            skipped="0"
-           time="54.359">
+           time="59.007">
     <properties></properties>
 
 
 
             <testcase
                 name="brokenLinks"
-                time="54.359"
+                time="59.007"
                 classname="testCases.BrokenLinksTest">
             </testcase>
 </testsuite>
